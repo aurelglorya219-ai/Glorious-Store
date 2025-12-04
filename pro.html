@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glorious Store
+    </title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for extra flair -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffe6f0, #ffb3d9);
+            color: #333;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1920x1080/ffb3d9/ffffff?text=Pinkiy+Dab+Flowers') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .btn-pink {
+            background-color: #ff69b4;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-pink:hover {
+            background-color: #ff1493;
+            transform: scale(1.05);
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .testimonial {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #ff69b4;
+            color: white;
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-pink" href="#">Glorious Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content animate-fade-in">
+            <img src="img.uas/logo project uas.jpg" width="225" class="rounded-circle">
+            <h1 class="display-4 fw-bold">Welcome to Glorious</h1>
+            <p class="lead">Dimana Bunga Mekar dengan Keanggunan dan Kegembiraan</p>
+            <a href="#products" class="btn btn-pink btn-lg">Explore Our Blooms</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="fw-bold">About Glorious</h2>
+                    <p>Selamat datang di Glorious, tempat di mana keindahan bunga bertemu dengan makna istimewa. Nama
+                        kami terinspirasi dari Glorya, yang merupakan nama pemilik toko ini, dan ous yang di ambil dari
+                        kata Taurus, ya itu zodiak pemilik yang melambangkan keteguhan dan keindahan.
+                    </p>
+                    <p>Di Glorious, kami menyajikan buket-buket bunga yang dirangkai dengan penuh cinta, sempurna untuk
+                        setiap momen spesial. Setiap buket kami adalah simbol keindahan dan perhatian, siap menyampaikan
+                        perasaan tulus kepada orang-orang terkasih.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img.uas/fresh-flower.jpg" alt="Fresh Flowers" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section with Bootstrap Carousel -->
+    <body>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img.uas/rose.jpg" class="card-img-top" alt="Roses">
+                    <div class="card-body">
+                        <h5 class="card-title">Romantic Roses</h5>
+                        <p class="card-text">Indah, lembut, dan penuh makna. Hadiah sempurna untuk
+                            mengungkapkan cinta yang tulus.
+                            Mulai dari Rp129.000.</p>
+                        <button class="btn btn-pink">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img.uas/lily.jpg" class="card-img-top" alt="Lilies">
+                    <div class="card-body">
+                        <h5 class="card-title">Elegant Lilies</h5>
+                        <p class="card-text">Melambangkan kemurnian, harapan, dan awal baru. Cocok untuk
+                            momen spesial dan penuh doa baik.
+                            Mulai dari Rp159.000</p>
+                        <button class="btn btn-pink">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img.uas/orchid.jpg" class="card-img-top" alt="Orchids">
+                    <div class="card-body">
+                        <h5 class="card-title">Exotic Orchids</h5>
+                        <p class="card-text">Eksotis, tahan lama, dan sangat elegan. Pilihan sempurna
+                            untuk hadiah berkelas.
+                            Mulai dari Rp199.000</p>
+                        <button class="btn btn-pink">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // JavaScript untuk mengarahkan tombol "Order Now" ke WhatsApp
+            document.addEventListener('DOMContentLoaded', function () {
+                // Pilih semua tombol dengan class "btn btn-pink"
+                const buttons = document.querySelectorAll('.btn.btn-pink');
+                buttons.forEach(button => {
+                    button.addEventListener('click', function () {
+                        // Cari elemen kartu terdekat
+                        const card = this.closest('.card');
+                        // Ambil judul produk dari h5.card-title
+                        const productTitle = card.querySelector('.card-title').textContent;
+
+                        // Buat pesan WhatsApp dengan nama produk
+                        const message = `Halo, saya ingin memesan ${productTitle}.`;
+
+                        // Buat URL WhatsApp dengan nomor Anda dan pesan yang sudah di-encode
+                        const whatsappUrl = `https://wa.me/085787705725?text=${encodeURIComponent(message)}`;
+
+                        // Buka WhatsApp di tab baru
+                        window.open(whatsappUrl, '_blank');
+                    });
+                });
+            });
+        </script>
+        
+        <!-- Add more carousel items if needed -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#flowerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#flowerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        </div>
+        </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-5">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-4">What Our Customers Say</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="testimonial">
+                            <p>"Buket bunganya cantik banget! Waktu aku kasih ke teman, dia langsung senyum lebar.
+                                Warnanya
+                                fresh dan rangkaiannya rapi banget."</p>
+                            <cite>- Nadin S.</cite>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial">
+                            <p>"Pelayanannya cepat dan ramah. Aku pesan mendadak, tapi tetap dikirim tepat waktu. Nggak
+                                nyesel langganan di sini."</p>
+                            <cite>- Salsa A.</cite>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial">
+                            <p>"Aku pesan buket graduation, hasilnya bahkan lebih bagus dari foto contoh! Temanku sampai
+                                bilang ini buket tercantik yang dia pernah dapat."</p>
+                            <cite>- Emily R.</cite>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-4">Get in Touch</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-pink">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Contact Info</h5>
+                        <p><strong>Address:</strong> 123 Blossom Street, Flower City</p>
+                        <p><strong>Phone:</strong> 085787705725</p>
+                        <p><strong>Email:</strong> Glorius11@gmail.com</p>
+                        <p><strong>Hours:</strong> Senin-Minggu: 9AM - 9PM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-4">
+            <div class="container text-center">
+                <p>&copy; 2026 Glorius Flower Shop. All rights reserved. | Designed by Aurel Glorya Maysa</p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Custom JS for animations -->
+        <script>
+            // Simple fade-in on scroll
+            window.addEventListener('scroll', function () {
+                const elements = document.querySelectorAll('.animate-fade-in');
+                elements.forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top < window.innerHeight) {
+                        el.classList.add('animate-fade-in');
+                    }
+                });
+            });
+        </script>
+    </body>
+
+</html>
